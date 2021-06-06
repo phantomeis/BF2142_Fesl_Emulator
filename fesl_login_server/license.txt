@@ -1,0 +1,1 @@
+﻿Dont type real account information, since it will not get encrypted in the database!
