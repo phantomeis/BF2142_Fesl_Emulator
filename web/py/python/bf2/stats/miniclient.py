@@ -128,7 +128,7 @@ class miniclient:
 		
 
 		self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.sock.settimeout(30)
+		self.sock.settimeout(5)
 
 		try:
 			self.sock.connect((host, port))
