@@ -1,0 +1,21 @@
+FESL/GS login server emulator v.1.0 (BETA 06)
+by Andrew Vasiliev
+e-mail: vasiliev1979@yandex.ru
+
+Based on "Simple TCP proxy/datapipe" and "GS login server emulator" sources
+by Luigi Auriemma
+e-mail: aluigi@autistici.org
+web:    aluigi.org
+
+Usage: %s [options]
+..Options:.
+-x port   port to listen connections (18300 default).
+-v        verbose output.
+-l        1 - logfile on, 0 - logfile off (default). FOR DEBUG.
+-restore_srv  enable restore account and password to email.
+-dbhost   host MySQL DB.
+-dbname   DB name.
+-dbuser   DB user.
+-dbpass   DB password.
+-p        increase process priority.
+-d DIR    dump the content of the connections in various tcpdump-like cap files.
