@@ -1,12 +1,10 @@
-#Battlefield 2142 Statistics Emulator Server
+#B attlefield 2142 Statistics Emulator Server
 
 
 before you read on, read my guide for Windows OSwith pictures, ready-packed zip download and tutorials on the databases here:
 https://prmp.boards.net/thread/10/setup-ranked-lan-server
 
-######
-fesl_login_server.exe
-######
+###  Commandline arguments for fesl_login_server.exe
 ```
 FESL/GS login server emulator v.1.0 (BETA 06)
 by Andrew Vasiliev
@@ -125,8 +123,8 @@ your.ip stella.master.gamespy.com
 
 **NOTE**: You can change License Agreement in license.txt, but however, due to the fact that BF2142 does not know a line break, the text will be like a one-liner.
 
-### fesl_login_server.exe COmmandline arguments
-
+### Commandline arguments for fesl_login_server.exe 
+```
 FESL/GS login server emulator v.1.0 (BETA 06)
 by Andrew Vasiliev
 e-mail: vasiliev1979@yandex.ru
@@ -148,7 +146,7 @@ Usage: %s [options]
 -dbpass   DB password.
 -p        increase process priority.
 -d DIR    dump the content of the connections in various tcpdump-like cap files.
-
+```
 
 
 ### WebServer
