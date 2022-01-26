@@ -7,41 +7,32 @@ https://prmp.boards.net/thread/10/setup-ranked-lan-server
 ######
 fesl_login_server.exe
 ######
+```
 FESL/GS login server emulator v.1.0 (BETA 06)
 by Andrew Vasiliev
 e-mail: vasiliev1979@yandex.ru
-
 Based on "Simple TCP proxy/datapipe" and "GS login server emulator" sources
 by Luigi Auriemma
 e-mail: aluigi@autistici.org
 web:    aluigi.org
-
 Usage: %s [options]
 ..Options:.
 -x port   port to listen connections (18300 default)
-
 -v        verbose output
-
 -l        1 - logfile on, 0 - logfile off (default). FOR DEBUG
-
 -restore_srv  enable restore account and password to email
-
 -dbhost   host MySQL DB
-
 -dbname   DB name
-
 -dbuser   DB user
-
 -dbpass   DB password
-
 -p        increase process priority
-
 -d DIR    dump the content of the connections in various tcpdump-like cap files
+```
 ######
 
-Now this is from the original author:
 
-##Client
+
+## Client
 1. Install Battlefield 2142
 2. Patch to version 1.50 and then 1.51
 3. Replace original bf2142.exe with bf2142.exe from [cracked_exe] folder (for your version, i recommend 1.51) 
@@ -97,9 +88,9 @@ In your HEX-Editor open a "find & replace"-window and search for  0301a8c0   and
 
 =========
 
-##Server
+## Server
 
-###Fesl Login Server (GameSpy Emulator)
+### Fesl Login Server (GameSpy Emulator)
 
 **NOTE**: To simplify the work, use the AMP package, for example XAMPP, skip step 2. then.
 
@@ -134,7 +125,7 @@ your.ip stella.master.gamespy.com
 
 **NOTE**: You can change License Agreement in license.txt, but however, due to the fact that BF2142 does not know a line break, the text will be like a one-liner.
 
-###fesl_login_server.exe COmmandline arguments
+### fesl_login_server.exe COmmandline arguments
 
 FESL/GS login server emulator v.1.0 (BETA 06)
 by Andrew Vasiliev
@@ -160,7 +151,7 @@ Usage: %s [options]
 
 
 
-###WebServer
+### WebServer
 
 **NOTE**: Stats requires PHP >= 5.3.8
 
@@ -175,7 +166,7 @@ display_errors = Off
 ```
 
 
-###GameServer
+### GameServer
 
 1. Download BF2142 serverfiles
 2. Extract "python" folder to the main folder with server. Agree with overwriting.
