@@ -1,18 +1,46 @@
 #Battlefield 2142 Statistics Emulator Server
 
 
-before you read on, find my guide for windows with pictures, ready-packed zip download and tutorials on the databases here:
+before you read on, read my guide for Windows OSwith pictures, ready-packed zip download and tutorials on the databases here:
 https://prmp.boards.net/thread/10/setup-ranked-lan-server
 
+######
+fesl_login_server.exe
+######
+FESL/GS login server emulator v.1.0 (BETA 06)
+by Andrew Vasiliev
+e-mail: vasiliev1979@yandex.ru
 
+Based on "Simple TCP proxy/datapipe" and "GS login server emulator" sources
+by Luigi Auriemma
+e-mail: aluigi@autistici.org
+web:    aluigi.org
+
+Usage: %s [options]
+..Options:.
+-x port   port to listen connections (18300 default).
+-v        verbose output.
+-l        1 - logfile on, 0 - logfile off (default). FOR DEBUG.
+-restore_srv  enable restore account and password to email.
+-dbhost   host MySQL DB.
+-dbname   DB name.
+-dbuser   DB user.
+-dbpass   DB password.
+-p        increase process priority.
+-d DIR    dump the content of the connections in various tcpdump-like cap files.
+######
 
 Now this is from the original author:
 
 ##Client
 1. Install Battlefield 2142
 2. Patch to version 1.50 and then 1.51
-3. Replace original bf2142.exe with bf2142.exe from [cracked_exe] folder (for your version, i recommend 1.51)
-4. (if you have installed v1.25) Edit hosts.ics ("С:\Windows\System32\drivers\etc\hosts.ics") and add next lines (сhange your.external.ip to your server's external ip):
+3. Replace original bf2142.exe with bf2142.exe from [cracked_exe] folder (for your version, i recommend 1.51) 
+(This is not cracked, but IP addresses inside the exe are chnaged for easier edits later on!)
+4. Depending in your Battlefield 2142patch version you either do:
+
+Patch version 1.25
+You need to edit hosts.ics ("С:\Windows\System32\drivers\etc\hosts.ics") and add next lines (сhange your.external.ip to your server's external ip):
 
 ```
 your.external.ip bf2142-pc.fesl.ea.com
@@ -31,8 +59,9 @@ your.external.ip stella.ms5.gamespy.com
 your.external.ip eapusher.dice.se
 ```
 
-4.(if you have installed 1.51) Edit bf2142.exe with hex-editor, change 192.168.1.3 to your server's IP.
-**Mind the / (slash) that appears sometimes! Do not forget to end the IP with that slash then!**
+Patch version 1.51
+You need to edit bf2142.exe with hex-editor, search and change (by hand, not replace) the IP address 192.168.1.3 to your server's IP.
+**Mind the / (slash) that appears sometimes! Do not forget to end the IP with that slash!**
 
 (**NOTE**: If you are left with the unallocated space after correcting IP, set dots and change the bit-values
 of the dots to 00!)
@@ -95,6 +124,31 @@ your.ip stella.master.gamespy.com
 7.Start _launch.bat
 
 **NOTE**: You can change License Agreement in license.txt, but however, due to the fact that BF2142 does not know a line break, the text will be like a one-liner.
+
+###fesl_login_server.exe COmmandline arguments
+
+FESL/GS login server emulator v.1.0 (BETA 06)
+by Andrew Vasiliev
+e-mail: vasiliev1979@yandex.ru
+
+Based on "Simple TCP proxy/datapipe" and "GS login server emulator" sources
+by Luigi Auriemma
+e-mail: aluigi@autistici.org
+web:    aluigi.org
+
+Usage: %s [options]
+..Options:.
+-x port   port to listen connections (18300 default).
+-v        verbose output.
+-l        1 - logfile on, 0 - logfile off (default). FOR DEBUG.
+-restore_srv  enable restore account and password to email.
+-dbhost   host MySQL DB.
+-dbname   DB name.
+-dbuser   DB user.
+-dbpass   DB password.
+-p        increase process priority.
+-d DIR    dump the content of the connections in various tcpdump-like cap files.
+
 
 
 ###WebServer
