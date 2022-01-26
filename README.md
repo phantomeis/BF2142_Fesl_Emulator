@@ -18,16 +18,16 @@ web:    aluigi.org
 
 Usage: %s [options]
 ..Options:.
--x port   port to listen connections (18300 default).
--v        verbose output.
--l        1 - logfile on, 0 - logfile off (default). FOR DEBUG.
--restore_srv  enable restore account and password to email.
--dbhost   host MySQL DB.
--dbname   DB name.
--dbuser   DB user.
--dbpass   DB password.
--p        increase process priority.
--d DIR    dump the content of the connections in various tcpdump-like cap files.
+-x port   port to listen connections (18300 default)
+-v        verbose output
+-l        1 - logfile on, 0 - logfile off (default). FOR DEBUG
+-restore_srv  enable restore account and password to email
+-dbhost   host MySQL DB
+-dbname   DB name
+-dbuser   DB user
+-dbpass   DB password
+-p        increase process priority
+-d DIR    dump the content of the connections in various tcpdump-like cap files
 ######
 
 Now this is from the original author:
