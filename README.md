@@ -1,4 +1,4 @@
-#B attlefield 2142 Statistics Emulator Server
+# Battlefield 2142 Statistics Emulator Server
 
 
 before you read on, read my guide for Windows OSwith pictures, ready-packed zip download and tutorials on the databases here:
@@ -84,7 +84,6 @@ Write the HEX-code like this: 14aca8c0
 In your HEX-Editor open a "find & replace"-window and search for  0301a8c0   and replace with your HEX-code (14aca8c0 in my case).
 
 
-=========
 
 ## Server
 
